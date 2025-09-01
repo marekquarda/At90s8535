@@ -10,7 +10,9 @@ set(PRODUCT_NAME base)
 # 8Mhz, this sould match the crystal on board
 set(F_CPU 8000000UL)
 # CPU At90s8535
-set(MCU at90s8535)
+set(MCU 8535)
+# CPU Linker At90s8535
+set(MCU_L at90s8535)
 # Default baudrate for UART
 set(BAUD 9600)
 # The programmer, avrdude 
@@ -34,10 +36,10 @@ add_definitions(
 )
 
 # mmcu MUST be passed to bot the compliler and linker, this handle the linker
-set(CMAKE_EXE_LINKER_FLAGS -mmcu=${MCU})
+set(CMAKE_EXE_LINKER_FLAGS -mmcu=${MCU_L})
 
 add_compile_options(
-    -mmcu=${MCU} # MCU
+    -mmcu=${MCU_L} # MCU
     #-std=gnu99   # C99 standard
     -Os          # optimize
     -Wall        # enable warnings
