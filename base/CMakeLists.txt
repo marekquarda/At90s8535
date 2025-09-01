@@ -19,7 +19,7 @@ set(BAUD 9600)
 set(PROG_TYPE linuxgpio)
 
 # AVR Fuses
-set(L_FUSE 0xc7)
+set(L_FUSE 0xc8)
 set(H_FUSE 0x5f)
 set(LOCK_BIT 0xff)
 
