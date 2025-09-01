@@ -10,7 +10,7 @@ set(PRODUCT_NAME base)
 # 8Mhz, this sould match the crystal on board
 set(F_CPU 8000000UL)
 # CPU At90s8535
-set(MCU 8535)
+set(MCU at90s8535)
 # CPU Linker At90s8535
 set(MCU_L at90s8535)
 # Default baudrate for UART
