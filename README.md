@@ -9,3 +9,9 @@ https://github.com/imakin/CharMenu/tree/master
 https://github.com/Sovichea/avr-i2c-library/tree/master
 
 directory /base = testing version 
+
+# Note: This chip doesn't have usefull suport for setting fuses 
+... Please don't use command
+'''
+make fuses
+'''
